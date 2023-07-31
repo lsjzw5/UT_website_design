@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Disease Prevention</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Chris Hsu, Yuyi Liu, Louie Wang">
+	<link rel="icon" href="logo.png">
+	<link rel="stylesheet" href="contact_us.css"> 
+	<script src="contact_us.js"></script>
+
+</head>
+
+<body>
+<!-- navigation bar -->
+	<table class="navigation">
+		<tr>
+			<!-- logo for main page -->
+			<td><a href="https://fall-2020.cs.utexas.edu/cs329e-bulko/lwang5/Project/main_page.html"><img src="logo.png" alt="Website Logo" id="logo"></a></td>
+			<td><a href="https://fall-2020.cs.utexas.edu/cs329e-bulko/chrisch/Project/news.php">Disease News</a></td>
+			<td><a href="https://fall-2020.cs.utexas.edu/cs329e-bulko/chrisch/Project/what.html">What is disease prevention?</a></td>
+			<td><a href="https://fall-2020.cs.utexas.edu/cs329e-bulko/yuyiliu/Project/why.php">Why disease prevention?</a></td>
+			<td><a href="https://fall-2020.cs.utexas.edu/cs329e-bulko/yuyiliu/Project/info.php">Infectious Disease Information</a></td>
+			<td><a href="https://fall-2020.cs.utexas.edu/cs329e-bulko/lwang5/Project/research.html">Research</a></td>
+            <td><a href="https://fall-2020.cs.utexas.edu/cs329e-bulko/lwang5/Project/external.html">Useful links</a></td>
+			<td><a href="https://fall-2020.cs.utexas.edu/cs329e-bulko/lwang5/Project/contact_us.html">Contact Us</a></td>
+		</tr>
+	</table>
+
+
+<!-- website builders' information -->
+<h1>CONTACT US</h1>
+<table class="contact">
+	<tr><th colspan="4">Website Developers Information</th></tr>
+	<tr>
+		<td><h3>Yuyi Liu</h3></td>
+		<td><img src="yuyiliu.png" alt='yuyiliu' height="75" width="45" /></td>
+		<td><ul><li>My name is Yuyi Liu.</li>		
+			<li>I am a Senior majoring in Mathematics, Actuarial Options at the University of Texas at Austin.</li>
+			<li>Contribution: <i>Why Disease Prevention?; Infectious Disease Information</i></li>
+		</ul></td>
+		<td rowspan="3" id="info">
+        	<p><b>Email: </b><a href="mailto:lcl@diseaseprevention.com">lcl@diseaseprevention.com</a></p><br>
+        	<p><b>Location: </b><a href="https://goo.gl/maps/aHTJiUeQiF9MWNLa6" target="_blank">110 Inner Campus Drive <br>Austin, TX 78705</a></p>
+        </td>
+	</tr>
+
+	<tr>
+		<td><h3>Christopher Hsu</h3></td>
+		<td><img src="chrishsu.png" alt='chrisch' height="75" width="75" /></td>
+		<td><ul>
+			<li>My name is Christopher Hsu.</li> 
+			<li>I am a Senior pursuing a major in Mathematics at the University of Texas at Austin.</li>
+			<li>Contribution: <i>Disease News; What is Disease Prevention?</i></li>
+		</ul></td>
+	</tr>
+
+	<tr>
+		<td><h3>Louie Wang</h3></td>
+		<td><img src="lw.png" alt='lwang' height="75" width="50" /></td>
+		<td><ul>
+			<li>My name is Louie Wang. </li>
+        	<li>I am a Junior pursuing a major in Mathematics at the University of Texas at Austin.</li>
+        	<li><i>Contribution: Main page; Research; Useful links; Contact Us</i></li>
+        </ul></td>
+	</tr>
+</table>
+
+
+<br><hr><br>
+
+<!-- questionnaire -->
+<!-- We'll store user's name and email into SQL database, and the rest to an ASCII file -->
+<h3 id="question">We value your opinions and please fill out the questionnaire below! </h3>
+<form method="post" action="questionnaire.php" class="form" onsubmit="return validify();">
+	<div>Name: <input type="text" name="name" id="name"/>
+		E-mail address: <input type="text" name="email" id="email" onblur="checkemail();" /><br></div>
+	<br>
+	<div id="q1">1. To what level do you feel that this website is helpful and informative to you?<br>
+		<input type="radio" name="q1" id="q11" value="Very helpful">Very helpful &nbsp; 
+		<input type="radio" name="q1" id="q12" value="Somewhat helpful">Somewhat helpful &nbsp;
+		<input type="radio" name="q1" id="q13" value="Not sure">Not sure &nbsp;
+		<input type="radio" name="q1" id="q14" value="Somewhat not helpful">Somewhat not helpful &nbsp;
+		<input type="radio" name="q1" id="q15" value="Not helpful at all">Not helpful at all
+	</div>
+	<br>
+	<div id="q2">2. What best describes your occupation/job? 
+		<input type="text" name="job" id="job">
+	</div>
+	<br>
+	<div id="q3">3. Which section(s) do you feel is(are) the most relevant to you? (select multiple if there's more than one)<br>
+		<input type="checkbox" name="relevant[]" id="q31" value="Main page">Main page <br>
+		<input type="checkbox" name="relevant[]" id="q32" value="COVID-19 News">COVID-19 News <br>
+		<input type="checkbox" name="relevant[]" id="q33" value="What is disease prevention?">What is disease prevention? <br>
+		<input type="checkbox" name="relevant[]" id="q34" value="Why disease prevention?">Why disease prevention? <br>
+		<input type="checkbox" name="relevant[]" id="q35" value="How to prevent disease?">How to prevent disease? <br>
+		<input type="checkbox" name="relevant[]" id="q36" value="Research">Research <br>
+		<input type="checkbox" name="relevant[]" id="q37" value="Useful links">Useful links <br>
+		<input type="checkbox" name="relevant[]" id="q38" value="None of these are relevent to me.">None of these are relevent to me.
+	</div>
+	<br>
+	<div id="q4">4. How do you feel about the content density across all webpages? <br>
+		<input type="radio" name="q4" id="q41" value="Too much information">Too much information &nbsp; 
+		<input type="radio" name="q4" id="q42" value="Just about right">Just about right &nbsp;
+		<input type="radio" name="q4" id="q43" value="Too little information">Too little information
+	</div>
+	<br>
+	<div id="q5">5. Any other suggestions you may have: <br>
+		<textarea name="comments" rows="4" cols="50" id="q5_1">(Optional)</textarea>
+	</div>
+	<br>
+	<div id="buttons">
+		<button type="submit" id="submit" onclick="checkanswers();">Submit</button> &nbsp; &nbsp;
+		<button type="reset" id="reset">Reset</button>
+	</div>
+</form>
+<br><br>
+
+<!-- footer -->
+<footer id="footer">
+	<b>&#169; Christopher Hsu, Yuyi Liu, Louie Wang</b>&nbsp;&nbsp;October 23, 2020
+</footer>
+
+</body>
+</html>

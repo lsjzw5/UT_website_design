@@ -1,0 +1,93 @@
+body {
+	background-color: #fafafa;
+	color: black;
+}
+
+h1 {
+	text-align: center;
+	font-size: 25pt; 
+	font-weight: bold;
+}
+
+.navigation {
+	overflow: hidden;
+	background-color: lightgray;
+	padding: 5px;
+	text-align: center;
+	table-layout: fixed;
+	color: blue;
+	width: 99%;
+	font-size: 14pt;
+}
+
+.navigation a{
+	text-decoration: none;
+}
+
+.navigation a:hover {
+	font-weight: bolder;
+	font-size: 16pt;
+}
+
+.navigation a:visited {
+	color: black;
+}
+
+#footer {
+	clear: both;
+	text-align: right;
+	padding: 5px;
+	border: 1px solid white;
+	font-size: 8pt;
+	font-style: italic;
+	background-color: white;
+	color: blue;
+}
+
+#logo {
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+}
+
+#description {
+	background-color: #f2f0f0;
+	text-align: center;
+	width: 50%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#left {
+	width: 25%;
+	float: left;
+}
+
+#mid {
+	width: 50%;
+	float: left;
+}
+
+#right {
+	width: 25%;
+	float: left;
+}
+
+.web {
+	opacity: 0.5;
+	height: 175px;
+	width: 175px;
+	display: block;
+	margin: auto;
+	border: 3px solid lightgray;
+	border-radius: 50%;
+}
+
+.articles {
+	padding: 10px;
+	border: 5px solid white;
+	font-size: 13pt;
+
+	opacity: 0.8;
+}

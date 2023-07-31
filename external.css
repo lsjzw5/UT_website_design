@@ -1,0 +1,86 @@
+body {
+	background-color: #fafafa;
+	color: black;
+}
+
+h1 {
+	text-align: center;
+	font-size: 25pt; 
+	font-weight: bold;
+}
+
+#links {
+	text-align: center;
+	border: 5px solid black;
+	width: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1em;
+}
+
+.websites {
+	height: 100px;
+	width: 100px;
+}
+
+figcaption {
+	font-size: 10px;
+	font-style: italic;
+}
+
+#description {
+	background-color: #f2f0f0;
+	text-align: center;
+	width: 50%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#logo {
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+}
+
+.navigation {
+	overflow: hidden;
+	background-color: lightgray;
+	padding: 5px;
+	text-align: center;
+	table-layout: fixed;
+	color: blue;
+	width: 99%;
+	font-size: 14pt;
+}
+
+.navigation a{
+	text-decoration: none;
+}
+
+.navigation a:hover {
+	font-weight: bolder;
+	font-size: 16pt;
+}
+
+.navigation a:visited {
+	color: black;
+}
+
+#footer {
+	clear: both;
+	text-align: right;
+	padding: 5px;
+	border: 1px solid white;
+	font-size: 8pt;
+	font-style: italic;
+	background-color: white;
+	color: blue;
+}
+
+.cols {
+	float: left;
+	padding: 8px;
+	width: 33%;
+}

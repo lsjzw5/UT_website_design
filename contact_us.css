@@ -1,0 +1,120 @@
+body {
+	background-color: #fafafa;
+	color: black;
+}
+
+h1 {
+	text-align: center;
+	font-size: 25pt; 
+	font-weight: bold;
+}
+
+#logo {
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+}
+
+.navigation {
+	overflow: hidden;
+	background-color: lightgray;
+	padding: 5px;
+	text-align: center;
+	table-layout: fixed;
+	color: blue;
+	width: 99%;
+	font-size: 14pt;
+}
+
+.navigation a{
+	text-decoration: none;
+}
+
+.navigation a:hover {
+	font-weight: bolder;
+	font-size: 16pt;
+}
+
+.navigation a:visited {
+	color: black;
+}
+
+#footer {
+	clear: both;
+	text-align: right;
+	padding: 5px;
+	border: 1px solid white;
+	font-size: 8pt;
+	font-style: italic;
+	background-color: white;
+	color: blue;
+}
+
+.cols {
+	float: left;
+	padding: 8px;
+	width: 33%;
+}
+
+#info {
+	padding-left: 1em;
+	padding-right: 1em;
+	border: 2px solid black;
+}
+
+.contact {
+
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contact tr {
+	height: 75px;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/* CSS for forms */
+input {
+	border-radius: 2px;
+	border: none;
+	font-size: 12px;
+}
+
+.form {
+	background-image: url('logo.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	padding: 15px;
+	color: black;
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	border: 10px solid black;
+	opacity: 0.8
+}
+
+#question {
+	text-align: center;
+}
+
+button {
+	border-radius: 5px;
+	background-color: black;
+	color:white;
+}
+
+button:hover {
+	background-color: gray;
+}
+
+#buttons {
+	text-align: center;
+}
